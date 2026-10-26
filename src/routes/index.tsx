@@ -204,8 +204,8 @@ function Hero() {
           </h1>
           <div className="mt-12 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
             <p className="max-w-md text-lg leading-relaxed text-muted-foreground">
-              I'm Avinash, a B.Tech student at Haldia University who enjoys building digital
-              products and bringing ideas to life through code and visual storytelling.
+              I'm Avinash, a B.Tech student at Haldia Institute of Technology who enjoys building
+              digital products and bringing ideas to life through code and visual storytelling.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
