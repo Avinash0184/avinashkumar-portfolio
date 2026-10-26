@@ -218,45 +218,54 @@ function Hero() {
           </div>
         </div>
 
-        <div className="reveal relative md:col-span-5">
-          <div
-            className="absolute -right-10 -top-6 h-[85%] w-[85%] rounded-t-full bg-sage md:-right-16"
-            aria-hidden
-          />
-          <div className="relative ml-auto aspect-[4/5] w-[88%] overflow-hidden rounded-t-full border border-forest/15 bg-forest">
-            {site.portrait ? (
-              <img
-                src={site.portrait}
-                alt="Portrait of Avinash Kumar"
-                className="h-full w-full object-cover"
-              />
-            ) : (
-              <div className="relative flex h-full w-full items-end justify-center">
-                <svg
-                  viewBox="0 0 200 220"
-                  className="w-3/4 text-primary-foreground/15"
-                  aria-hidden
-                  fill="currentColor"
-                >
-                  <circle cx="100" cy="80" r="42" />
-                  <path d="M18 220c0-54 37-88 82-88s82 34 82 88z" />
-                </svg>
-                <span className="label-mono absolute left-1/2 top-1/3 -translate-x-1/2 rounded-full bg-lime px-3 py-1.5 text-accent-foreground">
-                  Your photo here
-                </span>
-              </div>
-            )}
+        <div className="reveal relative flex flex-col md:col-span-5">
+          {/* Portrait frame with anchored floating persona badge */}
+          <div className="relative">
+            <div
+              className="absolute right-0 -top-6 h-[85%] w-[85%] rounded-t-full bg-sage sm:-right-8 md:-right-12 lg:-right-14"
+              aria-hidden
+            />
+            <div className="relative ml-auto aspect-[4/5] w-[88%] overflow-hidden rounded-t-full border border-forest/15 bg-forest">
+              {site.portrait ? (
+                <img
+                  src={site.portrait}
+                  alt="Portrait of Avinash Kumar"
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <div className="relative flex h-full w-full items-end justify-center">
+                  <svg
+                    viewBox="0 0 200 220"
+                    className="w-3/4 text-primary-foreground/15"
+                    aria-hidden
+                    fill="currentColor"
+                  >
+                    <circle cx="100" cy="80" r="42" />
+                    <path d="M18 220c0-54 37-88 82-88s82 34 82 88z" />
+                  </svg>
+                  <span className="label-mono absolute left-1/2 top-1/3 -translate-x-1/2 rounded-full bg-lime px-3 py-1.5 text-accent-foreground">
+                    Your photo here
+                  </span>
+                </div>
+              )}
+            </div>
+            <div className="float-slow absolute bottom-6 left-2 z-10 rounded-full bg-lime px-4 py-2 font-display text-base italic text-accent-foreground shadow-lg sm:bottom-8 sm:left-4 sm:px-5 sm:py-2.5 sm:text-lg md:bottom-10 md:left-0 lg:-left-6">
+              hi, I'm Avinash
+            </div>
           </div>
-          <div className="float-slow absolute -left-2 bottom-32 rounded-full bg-lime px-5 py-3 font-display text-lg italic text-accent-foreground shadow-lg md:-left-8">
-            hi, I'm Avinash
+          <div className="mt-8 border-t border-foreground pt-3">
+            <ul className="label-mono flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 sm:justify-between sm:gap-2">
+              <li>Developer</li>
+              <li aria-hidden className="opacity-40">
+                ·
+              </li>
+              <li>App Builder</li>
+              <li aria-hidden className="hidden opacity-40 sm:inline">
+                ·
+              </li>
+              <li className="w-full text-center sm:w-auto">Video Editor</li>
+            </ul>
           </div>
-          <ul className="label-mono relative mt-6 flex flex-wrap justify-between gap-2 border-t border-foreground pt-3">
-            <li>Developer</li>
-            <li aria-hidden>·</li>
-            <li>App Builder</li>
-            <li aria-hidden>·</li>
-            <li>Video Editor</li>
-          </ul>
         </div>
       </Wrap>
     </section>
