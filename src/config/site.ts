@@ -12,9 +12,9 @@ export const site = {
   aboutImage: "",
   socials: {
     instagram: "https://www.instagram.com/avinash.visuals.x/", // e.g. "https://instagram.com/yourhandle"
-    email: "avinashkumar620165@gmail.com", // e.g. "you@example.com"
+    email: "avinashkumar.codes@gmail.com", // e.g. "you@example.com"
     github: "https://github.com/Avinash0184",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/avinash-kumar-a45491428",
   },
   cashtrail: {
     apkUrl: "https://github.com/tech11world/CashTrail/releases/latest/download/CashTrail.apk",

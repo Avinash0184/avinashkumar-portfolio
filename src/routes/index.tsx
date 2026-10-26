@@ -175,7 +175,7 @@ function Hero() {
         <div className="reveal flex flex-col justify-between md:col-span-7">
           <p className="label-mono flex items-center gap-2 text-muted-foreground">
             <span className="h-2 w-2 rounded-full bg-lime ring-2 ring-forest/20" /> Avinash Kumar —
-            Haldia University
+            Haldia Institute of Technology
           </p>
           <h1 className="mt-10 font-display text-[clamp(3rem,7.4vw,6.75rem)] leading-[0.95] tracking-[-0.03em]">
             Building useful
